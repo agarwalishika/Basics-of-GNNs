@@ -1,6 +1,7 @@
 '''
 We want to simulate label propagation. Here, we have accounts that are linked to credit cards and if we know that one
-account is a fraud account then we can "stain" other accounts who are linked to the same credit card.
+account is a fraud account, then we can "stain" other accounts who are linked to the same credit card. This allows us
+to predict whether an account is a fraud account or not by determining the probability of both.
 '''
 import numpy as np
 # f(t+1) = alpha * S * f(t) + (1-alpha) * y
