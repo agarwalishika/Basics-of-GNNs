@@ -9,3 +9,8 @@ Based on Zak Jost's course: https://www.graphneuralnets.com/p/basics-of-gnns
 
 ## fraud-detection:
   Description: We want to simulate label propagation. Here, we have accounts that are linked to credit cards and if we know that one account is a fraud account, then we can "stain" other accounts who are linked to the same credit card. This allows usto predict whether an account is a fraud account or not by determining the probability of both.
+
+## positive-detection:
+  Description: We have a graph where the nodes are tweets (they're actually words lol) and the edges indicate that the same author 
+  tweeted both tweets. We want to see whether the author is a positive person depending on the content of their tweets. 
+  We will use (or at least try to use) a GCN (Graph Convolution Network) for this.
