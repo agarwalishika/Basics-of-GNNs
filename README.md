@@ -14,3 +14,9 @@ Based on Zak Jost's course: https://www.graphneuralnets.com/p/basics-of-gnns
   Description: We have a graph where the nodes are tweets (they're actually words lol) and the edges indicate that the same author 
   tweeted both tweets. We want to see whether the author is a positive person depending on the content of their tweets. 
   We will use (or at least try to use) a GCN (Graph Convolution Network) for this.
+
+## likeability:
+  Description: We have a social network. We want to determine how likeable a person is. A very simple rule: if a person follows
+  more people, they are likeable. If they block more people, they are not likeable. If a person follows more
+  likeable people, then they are likeable. We want to use message passing to see how likeable their neighbors are. The results
+  of this are quite interesting (assuming that the methodology is correct) and are included at the end of the Python file.
