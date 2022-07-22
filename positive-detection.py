@@ -77,7 +77,7 @@ tweets = np.array([["no"],
 
 '''
 
-# neutral/negative
+# neutral
 tweets = np.array([["good"],
                    ["great"],
                    ["no"],
@@ -114,4 +114,4 @@ print(f"In the 1-hop neighborhood, the author is a {determine_stance(new_feat_ve
 # note: if we wanted to add another layer, then we just use the new_feat_vec as the feat_vector and carry on as usual.
 # below is an example of how to add another layer
 new_feat_vec = message_passing(new_feat_vec, neighbors)
-print(f"In the 1-hop neighborhood, the author is a {determine_stance(new_feat_vec)} person")
+print(f"In the 2-hop neighborhood, the author is a {determine_stance(new_feat_vec)} person")
