@@ -20,3 +20,8 @@ Based on Zak Jost's course: https://www.graphneuralnets.com/p/basics-of-gnns
   more people, they are likeable. If they block more people, they are not likeable. If a person follows more
   likeable people, then they are likeable. We want to use message passing to see how likeable their neighbors are. The results
   of this are quite interesting (assuming that the methodology is correct) and are included at the end of the Python file.
+
+## attentative-positive-detection:
+  Description: Exact same situation as the positive-detection situation. However, we have modified the situation so that we
+  pay special attention to nodes depending on the dot product of a current node (the node gathering the messages)
+  and the message node (the node from which we get the message). This is trying to simulate a Graph Attention Network.
